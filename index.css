@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  width: 100%;
+
+}
+  
+  header {
+    margin-top: -20px;
+    left: 0%;
+    right: -15%;
+    width: 100%;
+    background:-webkit-radial-gradient(aqua,black);
+    padding: 15px;
+    text-align: center;
+    color: #a99302;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    background-attachment: fixed;
+  }
+  .hh{
+    background: -webkit-linear-gradient(black,aqua);
+  }
+footer {
+  background: -webkit-linear-gradient( rgb(0, 0, 0),aqua);
+  padding: 20px;
+  text-align: center;
+  color: #8f960b;
+  margin-top: 41%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  margin-bottom: -11%;
+  overflow: scroll y;
+
+}
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .contact-info {
+    text-align: left;
+    margin-left: -10%;
+    font-size: small;
+  }
+  .contact-info a:hover {
+    background:-webkit-radial-gradient(rgb(255, 215, 0), rgba(6, 69, 97, 0.972));
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+  .contact-info a{
+    text-decoration: none;
+   color: #a99302;
+  }
+   a{
+    text-decoration: none;
+    color: aquamarine;
+  }
+  .footer-content a:hover{
+    background: -webkit-radial-gradient(rgb(255, 215, 0), rgba(6, 69, 97, 0.972));
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+  .copy-right{
+    text-align: right;
+    margin-top: 6%;
+    font-size: 12%;
+  }
+  
+  .holder {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    margin-right: -8%;
+    animation: changeImage 15s infinite ease; /* Duration and easing of the animation */
+  }
+  
+  @keyframes changeImage {
+    0% {
+      background-image: url('image2.gif');
+    }
+    50% {
+        background-image: url('image1.gif');
+      }
+      100% {
+        background-image: url('image3.gif');
+      }
+  }
+  
+  .container {
+    margin-left: 50%;
+    margin-top: -80px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 40%;
+  }
+  
+  .weather-card {
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 500px;
+    text-align: center;
+    animation-name: colorchange;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transition-duration: 2s;
+    margin-top: 5%;
+  }
+  
+  @keyframes colorchange {
+    0% {
+      background-color: rgb(216, 187, 192);
+    }
+    25% {
+      background-color: rgb(39, 163, 177);
+    }
+    50% {
+      background-color: rgb(255, 251, 0);
+    }
+    75% {
+      background-color: rgb(183, 35, 102);
+    }
+    100% {
+      background-color: rgb(7, 4, 73);
+    }
+  }
+  
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .location {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .temperature {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #777;
+  }
+  p{
+   font-weight: lighter;
+   font-size: medium;
+  }
+  
+  input {
+    background: -webkit-radial-gradient(rgb(3, 143, 174), rgb(109, 18, 18));
+    font-weight: bolder;
+    color: cyan;
+  }
+  
+  button,
+  input {
+    font-family: Copperplate Gothic Light;
+  }
+  
+  button {
+    background: -webkit-linear-gradient(rgb(5, 86, 152), rgb(94, 2, 2));
+    color: rgb(213, 234, 22);
+  }
+  
+  .country-flag {
+    width: 10%;
+  }
+  main{
+    overflow: scroll y;
+  }
+  .humidity{
+    font-size: 18px;
+    color: #777;
+}
+/* latitude&longitude styling */
+.latitudelongitude {
+    font-size: 18px;
+    color: #777;
+}
+/* Wind speed styling */
+.wind-speed {
+    font-size: 18px;
+    color: #777;
+}
